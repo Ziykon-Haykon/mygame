@@ -16,10 +16,10 @@ image_height = 150
 
 speed = 1.5
 
-image_circle = pygame.image.load("game/Uryi.png")
+image_circle = pygame.image.load("Uryi.png")
 image_circle = pygame.transform.scale(image_circle, (150, 150))
 
-image_coin = pygame.image.load("game/nurik.png")
+image_coin = pygame.image.load("nurik.png")
 
 coin_width = 120
 coin_height = 120
@@ -29,7 +29,7 @@ image_coin = pygame.transform.scale(image_coin, (coin_width, coin_height))
 coin_x = random.randint(0, 1280 - coin_width)
 coin_y = random.randint(0, 720 - coin_height)
 
-image_bomb = pygame.image.load("game/egor.png")
+image_bomb = pygame.image.load("egor.png")
 
 
 bomb_width = 120
@@ -42,15 +42,15 @@ bomb_y = random.randint(0, 720 - bomb_height)
 
 
 
-background = pygame.image.load("game/background.jpg")
+background = pygame.image.load("background.jpg")
 background = pygame.transform.scale(background, (1280, 720))
 
 score = 0
 
 font = pygame.font.SysFont('Arial', 30)
 
-sound_bomb = pygame.mixer.Sound("game/gameover.wav")
-sound_coin = pygame.mixer.Sound("game/sound1.wav")
+sound_bomb = pygame.mixer.Sound("gameover.wav")
+sound_coin = pygame.mixer.Sound("sound1.wav")
 
 def distance(x1, y1, x2, y2):
     return math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
